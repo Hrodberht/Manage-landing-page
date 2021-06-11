@@ -7,6 +7,8 @@
     --bright-red: hsl(12, 88%, 59%);
     --dark-blue: hsl(228, 39%, 23%);
 
+    --bright-red-transparent: hsla(12, 88%, 59%, 0.514);
+
     --dark-grayish-blue: hsl(227, 12%, 61%);
     --very-dark-blue: hsl(233, 12%, 13%);
     --very-pale-red: hsl(13, 100%, 96%);
@@ -26,7 +28,27 @@ body {
     font-size: 16px;
 }
 
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /********** Utilities **********/
+
+.p-mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 /********** Header **********/
 
@@ -55,11 +77,48 @@ body {
     line-height: 2.3em;
 }
 
-.start-desktop {
+.start__link-desktop {
     display: none;
 }
 
 /********** Main **********/
+
+/* Intro */
+
+.intro__illustration-svg {
+    width: 100%;
+}
+
+.intro__title {
+    font-size: 2.5em;
+    text-align: center;
+    color: var(--dark-blue);
+    margin: 15px 0;
+}
+
+.intro__description {
+    text-align: center;
+    color: var(--dark-grayish-blue);
+    max-width: 90%;
+    margin: 0 auto 20px;
+    line-height: 1.7em;
+    padding-bottom: 20px;
+}
+
+.start {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.start__link {
+    padding: 13px 30px;
+    background-color: var(--bright-red);
+    border-radius: 50px;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: var(--very-light-gray);
+    box-shadow: 0px 10px 10px -5px var(--bright-red-transparent);
+}
 
 /********** Footer **********/
 
