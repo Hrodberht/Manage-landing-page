@@ -24,12 +24,40 @@ html {
 body {
     font-family: 'Be Vietnam', Arial, Helvetica, sans-serif;
     font-size: 16px;
-
 }
 
 /********** Utilities **********/
 
 /********** Header **********/
+
+.header {
+    padding: 30px 15px;
+}
+
+.header__flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-svg {
+    width: 110px;
+}
+
+.nav {
+    padding: 30px 0;
+}
+
+.nav__list {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+    font-weight: 700;
+    line-height: 2.3em;
+}
+
+.start-desktop {
+    display: none;
+}
 
 /********** Main **********/
 
