@@ -122,6 +122,10 @@ a {
 
 /* Points of Sale */
 
+.pos__container {
+    margin-bottom: 50px;
+}
+
 .pos__intro {
     text-align: center;
     margin-bottom: 50px;
@@ -141,6 +145,33 @@ a {
     margin: 0 auto;
     line-height: 1.9em;
     color: var(--dark-grayish-blue)
+}
+
+.pos__header {
+    font-weight: 700;
+    background-color: var(--very-pale-red);
+    padding: 10px 0;
+    margin-left: 12px;
+    border-radius: 50px 0 0 50px;
+}
+
+.pos__number {
+    background-color: var(--bright-red);
+    padding: 8px 25px;
+    border-radius: 50px;
+    color: var(--very-light-gray);
+}
+
+.pos__feature {
+    display: inline;
+    padding-left: 10px;
+}
+
+.pos__feature-description {
+    font-size: 0.9em;
+    line-height: 1.9em;
+    color: var(--dark-grayish-blue);
+    padding: 0 13px;
 }
 
 /********** Footer **********/
