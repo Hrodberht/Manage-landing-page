@@ -213,6 +213,54 @@ a {
 
 /********** Footer **********/
 
+.footer {
+    background-color: var(--very-dark-blue);
+    color: var(--very-light-gray);
+}
+
+.footer__list {
+    margin-top: 0;
+}
+
+.footer__flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subscribe {
+    display: flex;
+    gap: 10px;
+    order: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    padding: 40px 18px;
+    max-width: 500px;
+    font-size: 0.8em;
+}
+
+.subscribe__email {
+    /* min-width: 250px;
+    max-width: 400px; */
+    flex-grow: 1;
+    padding: 15px 24px;
+    border-radius: 50px;
+    border: none;
+}
+
+.subscribe__btn {
+    padding: 17px 33px;
+    border-radius: 50px;
+    background-color: var(--bright-red);
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer__list {
+    order: 1;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
