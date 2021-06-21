@@ -7,6 +7,8 @@
     --bright-red: hsl(12, 88%, 59%);
     --dark-blue: hsl(228, 39%, 23%);
 
+    --bright-red-hover: hsl(12, 81%, 69%);
+
     --bright-red-transparent: hsla(12, 88%, 59%, 0.514);
     --dark-grayish-blue-transparent: hsla(227, 12%, 61%, 0.589);
     --very-dark-blue-transparent: hsla(233, 12%, 13%, 0.226);
@@ -80,6 +82,14 @@ a {
     line-height: 2.3em;
 }
 
+.nav__item {
+    cursor: pointer;
+}
+
+.nav__item:hover {
+    color: var(--dark-grayish-blue);
+}
+
 .start__link-desktop {
     display: none;
 }
@@ -120,6 +130,10 @@ a {
     font-weight: 700;
     color: var(--very-light-gray);
     box-shadow: 0px 10px 10px -5px var(--bright-red-transparent);
+}
+
+.start__link:hover {
+    background-color: var(--bright-red-hover);
 }
 
 /* Points of Sale */
@@ -211,6 +225,11 @@ a {
     box-shadow: 0px 10px 10px -5px var(--very-dark-blue-transparent);
 }
 
+.simplify__link:hover {
+    background-color: var(--very-light-gray);
+    color: var(--bright-red-hover);
+}
+
 /********** Footer **********/
 
 .footer {
@@ -236,10 +255,6 @@ a {
     flex-basis: 100%;
     padding: 50px 18px;
     font-size: 0.8em;
-    max-width: 375px;
-    margin: 0 auto;
-
-
 }
 
 .subscribe__email {
@@ -258,19 +273,59 @@ a {
     font-weight: 700;
 }
 
+.subscribe__btn:hover {
+    background-color: var(--bright-red-hover);
+}
+
 .list__flex-container {
     order: 1;
     display: flex;
-    max-width: 500px;
-    margin: 0 auto;
+    justify-content: space-evenly;
+    width: 375px;
+    margin: 0 auto 30px;
 }
 
 .footer__list {
     order: 1;
     list-style-type: none;
-    flex-basis: 45%;
     font-size: 0.9em;
     line-height: 2.5em;
+    padding-left: 0;
+}
+
+.list__item {
+    cursor: pointer;
+}
+
+.list__item:hover {
+    color: var(--bright-red);
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    max-width: 325px;
+    margin: 0 auto 30px;
+}
+
+.social__icon {
+    fill: var(--very-light-gray);
+}
+
+.social__icon:hover {
+    fill: var(--bright-red);
+}
+
+.footer__logo-svg {
+    display: block;
+    margin: 0 auto 40px;
+}
+
+.copyright {
+    display: block;
+    color: var(--dark-grayish-blue);
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 .attribution {
