@@ -179,10 +179,6 @@ a {
     background-color: var(--bright-red-hover);
 }
 
-/* .start__link-desktop {
-    display: none;
-} */
-
 /* Points of Sale */
 
 .pos__intro {
@@ -513,10 +509,16 @@ a {
 }
 
 @media only screen and (min-width: 850px) {
+    /********** Utilities **********/
+
+    .p-mobile {
+        padding: 0;
+    }
+
     /********** Header **********/
 
     .header {
-        margin: 0 auto;
+        margin: 0 auto 100px;
         max-width: 1200px;
     }
 
@@ -558,8 +560,6 @@ a {
 
     .start-desktop {
         display: block;
-        /* padding-left: 70px; */
-        
     }
 
     .start__link-desktop {
@@ -578,6 +578,36 @@ a {
     }
 
     /********** Main **********/
+
+    /* Intro */
+
+    .intro {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .intro__text-content {
+        flex-basis: 50%;
+    }
+
+    .intro__title {
+        text-align: left;
+        max-width: 500px;
+        font-size: 3.4em;
+        margin-bottom: 40px;
+    }
+
+    .intro__description {
+        text-align: left;
+        margin: 0 0 35px;
+        max-width: 350px;
+    }
+
+    .start {
+        text-align: left;
+    }
 
     /********** Footer **********/
 }
