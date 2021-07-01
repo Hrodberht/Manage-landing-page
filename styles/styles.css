@@ -539,6 +539,7 @@ a {
 
     .header__flex-container {
         flex-basis: 20%;
+        padding: 0;
     }
 
     .desktop-nav {
@@ -582,15 +583,19 @@ a {
     /* Intro */
 
     .intro {
-        display: flex;
-        flex-direction: row-reverse;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 0 auto 80px;
     }
 
     .intro__text-content {
-        flex-basis: 50%;
+        order: 1;
     }
+
+    .intro__illustration {
+        order: 2;
+    }    
 
     .intro__title {
         text-align: left;
@@ -607,6 +612,45 @@ a {
 
     .start {
         text-align: left;
+    }
+
+    /* Points of Sale */
+
+    .pos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .pos__title {
+        text-align: left;
+        margin: 0 0 35px;
+        font-size: 2.4em;
+        max-width: 450px;
+    }
+
+    .pos__description {
+        text-align: left;
+        font-size: 1em;
+        line-height: 1.7em;
+        max-width: 330px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pos__header {
+        background: none;
+    }
+
+    .pos__feature {
+        padding-left: 20px;
+    }
+
+    .pos__feature-description {
+        padding: 0 50px 0 105px;
+        font-size: 1em;
+        line-height: 1.7em;
     }
 
     /********** Footer **********/
