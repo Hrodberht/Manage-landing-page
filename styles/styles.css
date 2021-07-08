@@ -462,6 +462,10 @@ a {
     padding-left: 20px;
 }
 
+.subscribe__email--error {
+    outline: 1px solid var(--red);
+}
+
 .list__flex-container {
     order: 1;
     display: flex;
