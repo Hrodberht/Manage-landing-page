@@ -104,6 +104,7 @@ a {
     margin: 0 25px;
     border-radius: 5px;
     line-height: 3em;
+    background: transparent;
 }
 
 .nav__item {
@@ -429,6 +430,8 @@ a {
     flex-basis: 100%;
     padding: 50px 18px;
     font-size: 0.8em;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .subscribe__email {
@@ -530,6 +533,10 @@ a {
 
     .p-mobile {
         padding: 0;
+    }
+
+    .p-desktop {
+        padding: 0 20px;
     }
 
     /********** Header **********/
@@ -778,5 +785,10 @@ a {
         position: relative;
         bottom: 50px;
     }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1250px) {
+    .desktop-nav {
+        width: 60%;
 }
     
