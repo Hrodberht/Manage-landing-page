@@ -15,10 +15,14 @@
 <div class="container">
 <header class="header">
   <div class="desktop-header__flex-container p-desktop">
-    <div class="header__flex-container ">
+    <div class="header__flex-container">
       <img class="logo-svg" src="images/logo.svg">
 
-      <img class="hamburger-svg" src="images/icon-hamburger.svg">
+      <button type="button" id="navbar__btn">
+        <img class="hamburger-svg" id="navbar__hamburger" src="images/icon-hamburger.svg">
+
+        <img class="close-svg hidden" id="navbar__close" src="images/icon-close.svg";>
+      </button>
     </div>
 
     <nav class="desktop-nav">
@@ -31,7 +35,7 @@
       </ul>
     </nav>
 
-    <nav class="nav hidden">
+    <nav class="nav hidden" id="nav">
       <ul class="nav__list">
         <li class="nav__item">Pricing</li>
         <li class="nav__item">Product</li>
@@ -293,11 +297,12 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Hrodberht">Robert</a>.
   </div>
 </footer>
 </div>
 <script src="scripts/carousel.js"></script>
 <script src="scripts/script.js"></script>
+<script src="scripts/navbar.js"></script>
 </body>
 </html>
