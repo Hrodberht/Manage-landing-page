@@ -441,6 +441,7 @@ a {
     font-size: 0.8em;
     max-width: 500px;
     margin: 0 auto;
+    position: relative;
 }
 
 .subscribe__email {
@@ -472,6 +473,8 @@ a {
     font-style: italic;
     margin: 0;
     padding-left: 20px;
+    position: absolute;
+    bottom: 30px;
 }
 
 .subscribe__email--error {
@@ -741,6 +744,12 @@ a {
         text-align: left;
         font-size: 2.5em;
         margin: 0;
+    }
+
+    /* Feedback */
+
+    .feedback__title {
+        max-width:
     }
 
     /********** Footer **********/
