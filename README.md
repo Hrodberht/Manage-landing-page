@@ -1,5 +1,7 @@
 # Frontend Mentor - Manage landing page
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/48a56bea-f02d-4f05-9bd1-d0d231981e9d/deploy-status)](https://app.netlify.com/sites/manage-mentor/deploys)
+
 ![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
